@@ -4,6 +4,7 @@
   --accent1-color: #32292F;
   --accent2-color: #FFD61E;
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=New+Tegomin&display=swap');
 
 /*Main content*/
 #content{
@@ -13,6 +14,10 @@
 
 body{
     background-color: #4A7B9D;
+    font-family: "Montserrat", "Century Gothic", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -21,6 +26,11 @@ header{
 footer{
     background-color: #32292F;
     color: #CF5002;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer a {
     color: #CF5002;
@@ -42,12 +52,17 @@ footer p{
  main section {
     text-align: center;
  }
+ main section img{
+    box-sizing: border-box;
+ }
 
  .button-box{
     text-align: center;
  }
  .msg{
     background-color: #4A7B9D;
+    line-height: 1.5em;
+    padding: 35px;
  }
  .logo{
     background-color: #CF5002;
@@ -55,14 +70,40 @@ footer p{
  }
  .icon{
     width: 80px;
+    padding-top: 10px;
  }
 #hero-img{
     min-width: 100%;
 }
+.rivers-card{
+    margin: 200px 0;
+}
+.camping-card{
+    margin: 200px 0;
+}
+.rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #FFD61E;
+}
+.mountains{
+    margin-top: 50px;
+}
 /*Titles and Paragraphs*/
+h1, h2, h3, h4{
+    font-family: "New Tegomin", "Trebuchet MS", serif;
+}
+
 h2{
     color: #32292F;
+    margin: 0;
 }
+.home-title{
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 #hero-msg h1{
     text-align: center;
     color: #32292F;
@@ -74,14 +115,20 @@ h2{
  }
  .msg p{
     color: #32292F;
+    font-size: .8em;
+    padding-bottom: 15px;
  }
 
 /* Link content*/
+#logo_link{
+    padding-top: 5px;
+}
 nav a {
     text-align: center;
     background-color: #FFD61E;
     color: #32292F;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover{
     background-color: #CF5002;
@@ -91,6 +138,10 @@ nav a:hover{
     background-color: #FFD61E;
     color: #32292F;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover{
     background-color: #CF5002;
@@ -100,6 +151,10 @@ nav a:hover{
     background-color: #FFD61E;
     color: #32292F;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join:hover{
     background-color: #32292F;
