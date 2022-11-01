@@ -240,6 +240,9 @@ footer p{
         display: block;
         padding: 15px;
     }
+    #hero-img{
+        max-width: 100%;
+    }
     #hero {
         margin-top: 0;
     }
