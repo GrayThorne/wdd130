@@ -1,0 +1,10 @@
+@use 'variables' as *;
+@mixin box-shadow {
+    box-shadow: 5px 5px 10px;
+    color: #6f7364;
+}
+
+@mixin hover1 {
+    background-color: $accent1-color;
+    color: $accent2-color
+}
