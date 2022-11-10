@@ -1,4 +1,5 @@
 @use 'variables' as *;
+
 @mixin box-shadow {
     box-shadow: 5px 5px 10px;
     color: #6f7364;
@@ -7,4 +8,28 @@
 @mixin hover1 {
     background-color: $accent1-color;
     color: $accent2-color
+}
+
+@mixin line-right {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, right), $secondary-color, transparent);
+}
+
+@mixin line-left {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), $secondary-color, transparent);
+}
+
+@mixin river-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin p-adj {
+    font-size: 20px;
+    padding: 15px;
 }
