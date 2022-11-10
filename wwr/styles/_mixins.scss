@@ -24,11 +24,6 @@
     background: linear-gradient(to var(--direction, left), $secondary-color, transparent);
 }
 
-@mixin river-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 @mixin p-adj {
     font-size: 20px;
     padding: 15px;

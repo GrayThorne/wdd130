@@ -7,50 +7,41 @@
 
 /* rivers main gird layout and design*/
 .river-1{
-    @include mixins.river-grid;
-    margin-top: 15px;
+    display: flex;
+    margin-top: 50px;
     
     .river-1-img{
         @include mixins.box-shadow;
-        grid-column: 1/2;
         width: 100%;
     }
-    .river-1-content{
-        grid-column: 2/4;
-    }
+
     p{
         @include mixins.p-adj;
     }
 }
 
 .river-2{
-    @include mixins.river-grid;
+    display: flex;
+    flex-direction: row-reverse;
 
     .river-2-img{
         @include mixins.box-shadow;
-        grid-column: 3/4;
         width: 100%;
     }
-    .river-2-content{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
+   
     p{
         @include mixins.p-adj;
     }
 }
 
 .river-3{
-    @include mixins.river-grid;
+    display: flex;
 
     .river-3-img{
         @include mixins.box-shadow;
-        grid-column: 1/2;
         width: 100%;
     }
-    .river-3-content{
-        grid-column: 2/4;
-    }
+
     p{
         @include mixins.p-adj;
     }
@@ -76,5 +67,5 @@
 }
 
 @media screen and (max-width: 900px) {
-    
+  
 }
