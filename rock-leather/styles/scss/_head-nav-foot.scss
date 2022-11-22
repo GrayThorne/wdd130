@@ -1,0 +1,75 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/*-- header and nav--*/
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: $secondary-color;
+}
+
+.logo{
+    min-height: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 3em;
+
+    a{
+        font: $heading-font;
+        padding: 35px;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $accent2-opat;
+        @include box-shad;
+        color: $accent1-color;
+        border-radius: 10%;
+        transition: .5s;
+        
+        &:hover{
+            color: $accent1-color;
+            background-color: $accent2-color;
+            border-radius: 50% 20% 50%;
+        }
+    }
+}
+
+/*--footer layout and design--*/
+footer{
+    background-color: $secondary-color;
+    color: $accent1-color;
+    padding: 25px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: $para-font;
+
+    .social img{
+        padding-top: 15px;
+    }
+    
+    a {
+        color: $accent1-color;
+        text-decoration: none;
+
+        &:hover{
+            color: $accent1-color;
+            text-decoration: underline;
+        }
+    } 
+
+    p{
+        padding: 35px;
+        font-size: 1.2em;
+        background-color: $accent2-opat;
+        color: $accent1-color;
+        border-radius: 10%;
+    }
+   
+
+}

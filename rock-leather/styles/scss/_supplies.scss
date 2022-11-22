@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins';
+
+.custom-order{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px) 100px;
+
+    h1{
+        grid-area: 1/1/2/3;
+    }
+    .banner-img{
+        grid-area: 1/2/3/3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .back-img{
+        grid-area: 3/1/5/2;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    // .order-form{
+
+    // }
+}
+
+.sale-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

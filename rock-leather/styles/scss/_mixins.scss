@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+
+@mixin pic-border {
+    border: 8px solid $accent1-color;
+    border-radius: 10%;
+}
+
+@mixin box-shad {
+    box-shadow: 5px 5px 10px;
+    color: $primary-color;
+}
+
+@mixin header-style {
+    color: $accent1-color;
+    background-image: linear-gradient($primary-opat, $secondary-opat);
+    border-radius: 15% 5% 15% 5%;
+}

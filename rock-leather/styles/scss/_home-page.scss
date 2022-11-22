@@ -1,0 +1,84 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/*--home body layout and design--*/
+body{
+    background-color: $secondary-opat;
+}
+.welcome{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+
+    .banner-img{
+        max-height: 100%;
+        grid-area: 1/4/4/5;
+        @include pic-border;
+        @include box-shad;
+        margin: 10px;
+    }
+
+    h1{
+        grid-area: 1/1/2/4;
+        font: $heading-font;
+        font-size: 30px;
+        text-align: center;
+        padding: 60px;
+        @include box-shad;
+        @include header-style;
+    }
+    p{
+        text-align: center;
+        padding: 40px;
+        font: $para-font;
+        background-color: $accent1-color;
+        border-radius: 5%;
+        font-size: 19px;
+        background-image: linear-gradient($accent1-color, $accent1-color, $accent1-color, $primary-opat);
+        @include box-shad;
+        
+    
+        &:nth-of-type(1){
+            grid-area: 2/1/3/4;
+        }
+        &:nth-of-type(2){
+            grid-area: 3/1/4/4;
+        }
+    }
+
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+
+    img{
+        max-height: 100%;
+        grid-area: 1/1/3/2;
+        @include pic-border;
+        @include box-shad;
+    }
+    h2{
+        grid-area: 1/2/2/4;
+        padding-top: 70px;
+        margin: 50px;
+        @include header-style;
+        @include box-shad;
+        color: $accent1-color;
+    }
+    p{
+        grid-area: 2/2/3/4;
+        padding: 50px;
+        @include box-shad;
+        font: $para-font;
+        background-color: $accent1-color;
+        border-radius: 5%;
+        font-size: 18px;
+        margin: 50px;
+        background-image: linear-gradient($accent1-color, $accent1-color, $accent1-color, $primary-opat);
+    }
+
+}
