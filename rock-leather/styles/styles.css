@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=New+Tegomin&display=swap");
 /*-- header and nav--*/
 header {
   display: grid;
@@ -16,7 +17,7 @@ nav {
   line-height: 3em;
 }
 nav a {
-  font: "New Tegomin", "Trebuchet MS", serif;
+  font-family: "New Tegomin", "Trebuchet MS", serif;
   padding: 35px;
   font-size: 22px;
   text-align: center;
@@ -85,7 +86,7 @@ body {
 }
 .welcome h1 {
   grid-area: 1/1/2/4;
-  font: "New Tegomin", "Trebuchet MS", serif;
+  font-family: "New Tegomin", "Trebuchet MS", serif;
   font-size: 30px;
   text-align: center;
   padding: 60px;
@@ -98,7 +99,7 @@ body {
 .welcome p {
   text-align: center;
   padding: 40px;
-  font: "Montserrat", "Century Gothic", sans-serif;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
   background-color: #E4DFDA;
   border-radius: 5%;
   font-size: 19px;
@@ -192,12 +193,14 @@ body {
   padding-top: 70px;
   color: #E4DFDA;
   grid-area: 1/2/2/3;
+  font-family: "New Tegomin", "Trebuchet MS", serif;
   text-align: center;
   background-color: rgba(40, 70, 75, 0.5960784314);
 }
 .hero p {
   padding: 60px;
   color: #E4DFDA;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
   font-size: 18px;
   grid-area: 2/2/3/3;
   background-color: rgba(98, 150, 119, 0.5960784314);
