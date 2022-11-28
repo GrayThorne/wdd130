@@ -151,6 +151,29 @@ body {
   background-image: linear-gradient(#E4DFDA, #E4DFDA, #E4DFDA, rgba(40, 70, 75, 0.5960784314));
 }
 
+@media screen and (max-width: 1500px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header .logo {
+    max-width: 250px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .welcome, .info {
+    display: block;
+  }
+  .banner-img {
+    max-width: 100%;
+  }
+  .leather-wallet-pattern {
+    max-width: 100%;
+  }
+}
 .hero {
   display: grid;
   margin-top: 30px;
@@ -248,6 +271,16 @@ body {
 .sale-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px;
+}
+.sale-items .item-1 {
+  grid-column: 1/2;
+}
+.sale-items .item-2 {
+  grid-column: 2/3;
+}
+.sale-items .item-3 {
+  grid-column: 3/4;
 }
 
 /*# sourceMappingURL=styles.css.map */

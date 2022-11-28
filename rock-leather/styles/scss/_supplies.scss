@@ -27,4 +27,15 @@
 .sale-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px;
+
+    .item-1{
+        grid-column: 1/2;
+    }
+    .item-2{
+        grid-column: 2/3;
+    }
+    .item-3{
+        grid-column: 3/4;
+    }
 }

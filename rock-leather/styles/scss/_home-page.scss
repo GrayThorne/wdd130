@@ -82,3 +82,27 @@ body{
     }
 
 }
+
+@media screen and (max-width: 1500px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        .logo{
+            max-width: 250px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+    }
+    .welcome, .info {
+        display: block;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    .leather-wallet-pattern{
+        max-width: 100%;
+    }
+}
