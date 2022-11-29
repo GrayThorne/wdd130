@@ -73,7 +73,7 @@ body{
         grid-area: 2/2/3/4;
         padding: 50px;
         @include box-shad;
-        font: $para-font;
+        font-family: $para-font;
         background-color: $accent1-color;
         border-radius: 5%;
         font-size: 18px;
