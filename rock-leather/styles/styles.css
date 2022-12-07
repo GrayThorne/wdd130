@@ -265,6 +265,18 @@ body {
   font-size: 18px;
 }
 
+@media screen and (max-width: 1500px) {
+  .hero {
+    display: block;
+  }
+  .banner-img {
+    max-width: 100%;
+  }
+  .post-form, .leather-wallet, .post-field, #message-post {
+    display: block;
+    max-width: 100%;
+  }
+}
 .custom-order {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
