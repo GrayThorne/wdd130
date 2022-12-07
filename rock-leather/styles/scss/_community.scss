@@ -36,16 +36,21 @@
 .post-form{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    position: relative;
 
+    &:hover .post-field{
+        height: 100%;
+    }
+    
    
     .post-field{
         grid-column: 2/3;
         grid-row: 1/2;
         text-align: center;
+        @include overlay;
 
         textarea{
-            margin-top: 155px;
-            width: 1000px;
+            width: 800px;
             height: 150px;
             background-color: $primary-color;
             color: $accent1-color;
