@@ -204,7 +204,7 @@ body {
   font-family: "Montserrat", "Century Gothic", sans-serif;
   font-size: 18px;
   grid-area: 2/2/3/3;
-  background-color: rgba(98, 150, 119, 0.5960784314);
+  background-color: hsla(144deg, 21%, 49%, 0.9);
 }
 
 .post-form {
