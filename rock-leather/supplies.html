@@ -22,28 +22,33 @@
         <main class="home-grid">
             <section class="custom-order">
                 <h1>Supplies</h1>
-                <p>
+                <p class="main-msg">
                     Welcome to your start and further love of leather goods. We have the raw materials to start your journey. If you would like something made instead of making it yourself, we have some pre-made items and well as a sign up for a custom order.
                 </p> 
                 <img class="banner-img" src="./images/bench.jpg" alt="leather work bench with tools organized">
+                <div class="order-msg">
+                    <p >
+                        Please fill out the form with what you would like to order and we will get in touch with you about the details. Thank you.
+                    </p>
+                </div>
                 <div class="back-img">
-                    <img class="leather-wallet" src="./images/small wallet.jpg" alt="leather wallet">
+                    <img class="leather-wallet" src="./images/small-wallet.jpg" alt="leather wallet">
                 </div>
                 <form class="order-form">
-                    <ul>
-                        <li>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="contact_email"/>
-                        </li>
-                        <li>
-                            <label for="order-msg">Custom Order Form</label>
-                            <textarea id="order-msg" name="order-details"></textarea>
-                        </li>
-                        <li class="custom-order-button">
-                            <button class="button">Send</button>
-                        </li>
-                    </ul>
+                        <ul class="order-content">
+                            <li >
+                                <label class="email-box" for="mail">E-mail:</label>
+                                <textarea class="email-box-field" type="email" id="mail" name="contact_email"></textarea>
+                            </li>
+                            <li class="order-area-box">
+                                <textarea class="order-area" name="order-details" placeholder="Tell us what you would like to custom order."></textarea>
+                            </li>
+                            <li class="custom-order-button">
+                                <button class="button">Send</button>
+                            </li>
+                        </ul>
                 </form>
+            </div>
             </section>
             <section class="sale-items">
                 <div class="item-1">
@@ -117,21 +122,21 @@
                     </form>
                 </div>
                 <div class="item-4">
-                    <img class="pricking-irons" src="./images/" alt="tiger brand thread">
-                    <h3>Tiger Thread</h3>
+                    <img class="pricking-irons" src="./images/prickingirons.png" alt="tiger brand thread">
+                    <h3>Pricking Irons</h3>
                     <form class="">
                         <ul>
                             <li>
-                                <input type="radio" id="white" name="pricking-irons" value="white">
-                                <label for="white">White</label>
+                                <input type="radio" id="white" name="pricking-irons" value="4mm-set">
+                                <label for="4mm-set">4mm Set</label>
                             </li>
                             <li>
-                                <input type="radio" id="brown" name="pricking-irons" value="brown">
-                                <label for="brown">Brown</label>
+                                <input type="radio" id="brown" name="pricking-irons" value="5mm-set">
+                                <label for="5mm-set">5mm Set</label>
                             </li>
                             <li>
-                                <input type="radio" id="Black" name="pricking-irons" value="Black">
-                                <label for="Black">Black</label>
+                                <input type="radio" id="Black" name="pricking-irons" value="6mm-set">
+                                <label for="6mm-set">6mm Set</label>
                             </li>
                             <li class="item-3-button">
                                 <button class="button">Order</button>

@@ -98,12 +98,11 @@ body {
   border-radius: 15% 5% 15% 5%;
 }
 .welcome p {
-  text-align: center;
   padding: 40px;
+  text-align: center;
   font-family: "Montserrat", "Century Gothic", sans-serif;
   background-color: #E4DFDA;
   border-radius: 5%;
-  font-size: 19px;
   background-image: linear-gradient(#E4DFDA, #E4DFDA, #E4DFDA, rgba(40, 70, 75, 0.5960784314));
   box-shadow: 5px 5px 10px;
   color: #28464B;
@@ -200,7 +199,7 @@ body {
 }
 .hero p {
   padding: 60px;
-  color: #E4DFDA;
+  color: hsl(78deg, 97%, 71%);
   font-family: "Montserrat", "Century Gothic", sans-serif;
   font-size: 18px;
   grid-area: 2/2/3/3;
@@ -280,38 +279,179 @@ body {
     max-width: 100%;
   }
 }
+p {
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+}
+
 .custom-order {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 300px) 100px;
 }
 .custom-order h1 {
-  grid-area: 1/1/2/3;
+  grid-area: 1/1/2/2;
+  font-family: "New Tegomin", "Trebuchet MS", serif;
+  text-align: center;
+  padding-top: 80px;
+  color: #E4DFDA;
+  background-image: linear-gradient(rgba(40, 70, 75, 0.5960784314), rgba(98, 150, 119, 0.5960784314));
+  border-radius: 15% 5% 15% 5%;
+  box-shadow: 5px 5px 10px;
+  color: #28464B;
+  color: #E4DFDA;
+  font-size: 40px;
+}
+.custom-order .main-msg {
+  padding: 40px;
+  padding-top: 90px;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+  background-color: #E4DFDA;
+  border-radius: 5%;
+  background-image: linear-gradient(#E4DFDA, #E4DFDA, #E4DFDA, rgba(40, 70, 75, 0.5960784314));
+  box-shadow: 5px 5px 10px;
+  color: #28464B;
 }
 .custom-order .banner-img {
   grid-area: 1/2/3/3;
   max-width: 100%;
   max-height: 100%;
+  justify-self: center;
+  border-radius: 10px;
 }
 .custom-order .back-img {
   grid-area: 3/1/5/2;
   max-width: 100%;
   max-height: 100%;
+  justify-self: center;
+}
+.custom-order .back-img .leather-wallet {
+  max-height: 100%;
+  border-radius: 10px;
+}
+.custom-order .order-msg {
+  grid-area: 3/1/4/2;
+  z-index: 1;
+  background-color: hsla(144deg, 21%, 49%, 0.9);
+  color: hsl(78deg, 97%, 71%);
+  text-align: center;
+  font-size: 18px;
+  padding-top: 100px;
+  border-radius: 10px;
+}
+.custom-order .order-form {
+  grid-area: 3/2/5/3;
+  background-color: rgba(40, 70, 75, 0.5960784314);
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+  border-radius: 10px;
+}
+.custom-order .order-form li {
+  list-style: none;
+}
+.custom-order .order-form .email-box {
+  padding: 30px;
+  height: 10px;
+  font-size: 20px;
+  color: #E4DFDA;
+}
+.custom-order .order-form .email-box-field {
+  height: 30px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: #28464B;
+  color: hsl(78deg, 97%, 71%);
+}
+.custom-order .order-form .order-area-box {
+  padding: 20px;
+}
+.custom-order .order-form .order-area {
+  padding: 20px;
+  width: 400px;
+  height: 100px;
+  background-color: #28464B;
+  color: hsl(78deg, 97%, 71%);
+  font-size: 18px;
+  border-radius: 10px;
+}
+.custom-order .order-form .button {
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 20px;
+  background-color: #629677;
+  color: #E4DFDA;
+  transition: 0.5s;
+}
+.custom-order .order-form .button:hover {
+  background-color: #629677;
+  border-radius: 50% 20% 50%;
+  color: hsl(78deg, 97%, 71%);
 }
 
 .sale-items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 400px 400px;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+  justify-items: center;
 }
 .sale-items .item-1 {
   grid-column: 1/2;
 }
+.sale-items .item-1 .veg-tan {
+  border-radius: 10px;
+}
 .sale-items .item-2 {
   grid-column: 2/3;
 }
+.sale-items .item-2 .chrome-tan {
+  padding-bottom: 70px;
+  border-radius: 10px;
+}
 .sale-items .item-3 {
   grid-column: 3/4;
+}
+.sale-items .item-3 .tiger-thread {
+  padding-bottom: 70px;
+  border-radius: 10px;
+}
+.sale-items .item-4 {
+  grid-column: 4/5;
+}
+.sale-items .item-4 .pricking-irons {
+  padding-bottom: 90px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .custom-order {
+    display: block;
+  }
+  .custom-order h1 {
+    padding-bottom: 80px;
+  }
+  .custom-order .order-msg {
+    padding-bottom: 50px;
+  }
+  .sale-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sale-items .item-1 {
+    grid-area: 1/1/2/2;
+  }
+  .sale-items .item-2 {
+    grid-area: 1/2/2/3;
+  }
+  .sale-items .item-3 {
+    padding-top: 20px;
+    grid-area: 2/1/3/2;
+  }
+  .sale-items .item-4 {
+    padding-top: 20px;
+    grid-area: 2/2/3/3;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

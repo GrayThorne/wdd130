@@ -29,13 +29,8 @@ body{
         @include header-style;
     }
     p{
-        text-align: center;
         padding: 40px;
-        font-family: $para-font;
-        background-color: $accent1-color;
-        border-radius: 5%;
-        font-size: 19px;
-        background-image: linear-gradient($accent1-color, $accent1-color, $accent1-color, $primary-opat);
+        @include para-style;
         @include box-shad;
         
     

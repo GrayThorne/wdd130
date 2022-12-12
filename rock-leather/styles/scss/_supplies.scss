@@ -1,5 +1,9 @@
 @use 'variables' as *;
-@use 'mixins';
+@use 'mixins' as *;
+
+p{
+    font-family: $para-font;
+}
 
 .custom-order{
     display: grid;
@@ -7,35 +11,174 @@
     grid-template-rows: repeat(4, 300px) 100px;
 
     h1{
-        grid-area: 1/1/2/3;
+        grid-area: 1/1/2/2;
+        font-family: $heading-font;
+        text-align: center;
+        padding-top: 80px;
+        @include header-style;
+        @include box-shad;
+        color: $accent1-color;
+        font-size: 40px;
+    }
+    .main-msg{
+        padding: 40px;
+        padding-top: 90px;
+        font-size: 18px;
+        @include para-style;
+        @include box-shad;
     }
     .banner-img{
         grid-area: 1/2/3/3;
         max-width: 100%;
         max-height: 100%;
+        justify-self: center;
+        border-radius: 10px;
     }
     .back-img{
         grid-area: 3/1/5/2;
         max-width: 100%;
         max-height: 100%;
+        justify-self: center;
+        
+        .leather-wallet{
+            max-height: 100%;
+            border-radius: 10px;
+        }
     }
-    // .order-form{
+    .order-msg{
+        grid-area: 3/1/4/2;
+        z-index: 1;
+        background-color: $second-opat;
+        color: $accent-text;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 100px;
+        border-radius: 10px;
+    }
+ 
+    .order-form{
+        grid-area: 3/2/5/3;
+        background-color: $primary-opat;
+        font-family: $para-font;
+        border-radius: 10px;
 
-    // }
+        li{
+            list-style: none;
+        }
+
+        .email-box{
+            padding: 30px;
+            height: 10px;
+            font-size: 20px;
+            color: $accent1-color;
+        }
+        .email-box-field{
+            height: 30px;
+            width: 320px;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $accent-text;
+        }
+        .order-area-box{
+            padding: 20px;
+        }
+
+        .order-area{
+            padding: 20px;
+            width: 400px;
+            height: 100px;
+            background-color: $primary-color;
+            color: $accent-text;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .button{
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 20px;
+            background-color: $secondary-color;
+            color: $accent1-color;
+            transition: .5s;
+
+            &:hover{
+                background-color: $secondary-color;
+                border-radius: 50% 20% 50%;
+                color: $accent-text;
+            }
+        }
+    }
 }
 
 .sale-items{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 400px;
-
+    font-family: $para-font;
+    justify-items: center;
+    
     .item-1{
         grid-column: 1/2;
+
+        .veg-tan{
+            @include border-rad;
+        }
     }
     .item-2{
         grid-column: 2/3;
+        
+        .chrome-tan{
+            padding-bottom: 70px;
+            @include border-rad;
+        }
     }
     .item-3{
         grid-column: 3/4;
+
+        .tiger-thread{
+            padding-bottom: 70px;
+            @include border-rad;
+        }
+    }
+    .item-4{
+        grid-column: 4/5;
+
+        .pricking-irons{
+            padding-bottom: 90px;
+            @include border-rad;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .custom-order{
+        display: block;
+
+        h1{
+            padding-bottom: 80px;
+        }
+
+        .order-msg{
+            padding-bottom: 50px;
+        }
+    }
+    .sale-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        .item-1{
+            grid-area: 1/1/2/2;
+        }
+        .item-2{
+            grid-area: 1/2/2/3;
+        }
+        .item-3{
+            padding-top: 20px;
+            grid-area: 2/1/3/2;
+        }
+        .item-4{
+            padding-top: 20px;
+            grid-area: 2/2/3/3;
+        }
     }
 }

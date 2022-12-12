@@ -6,6 +6,10 @@
     border-radius: 10%;
 }
 
+@mixin border-rad{
+    border-radius: 10px;
+}
+
 @mixin box-shad {
     box-shadow: 5px 5px 10px;
     color: $primary-color;
@@ -15,6 +19,14 @@
     color: $accent1-color;
     background-image: linear-gradient($primary-opat, $secondary-opat);
     border-radius: 15% 5% 15% 5%;
+}
+
+@mixin para-style{
+    text-align: center;
+    font-family: $para-font;
+    background-color: $accent1-color;
+    border-radius: 5%;
+    background-image: linear-gradient($accent1-color, $accent1-color, $accent1-color, $primary-opat);
 }
 
 @mixin overlay {
