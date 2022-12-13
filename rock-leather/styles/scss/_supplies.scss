@@ -113,13 +113,16 @@ p{
 .sale-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 400px 1fr;
     font-family: $para-font;
     justify-items: center;
-    
+
+    ul{
+        list-style: none;
+    }
     .item-1{
         grid-column: 1/2;
-
+        
         .veg-tan{
             @include border-rad;
         }
@@ -128,7 +131,6 @@ p{
         grid-column: 2/3;
         
         .chrome-tan{
-            padding-bottom: 70px;
             @include border-rad;
         }
     }
@@ -136,7 +138,6 @@ p{
         grid-column: 3/4;
 
         .tiger-thread{
-            padding-bottom: 70px;
             @include border-rad;
         }
     }
@@ -144,7 +145,6 @@ p{
         grid-column: 4/5;
 
         .pricking-irons{
-            padding-bottom: 90px;
             @include border-rad;
         }
     }
@@ -160,6 +160,12 @@ p{
 
         .order-msg{
             padding-bottom: 50px;
+        }
+        .email-box-field{
+            width: 100%;
+        }
+        .order-area{
+            margin-left: -45px;
         }
     }
     .sale-items{

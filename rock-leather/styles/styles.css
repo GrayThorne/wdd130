@@ -392,9 +392,12 @@ p {
 .sale-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 400px 1fr;
   font-family: "Montserrat", "Century Gothic", sans-serif;
   justify-items: center;
+}
+.sale-items ul {
+  list-style: none;
 }
 .sale-items .item-1 {
   grid-column: 1/2;
@@ -406,21 +409,18 @@ p {
   grid-column: 2/3;
 }
 .sale-items .item-2 .chrome-tan {
-  padding-bottom: 70px;
   border-radius: 10px;
 }
 .sale-items .item-3 {
   grid-column: 3/4;
 }
 .sale-items .item-3 .tiger-thread {
-  padding-bottom: 70px;
   border-radius: 10px;
 }
 .sale-items .item-4 {
   grid-column: 4/5;
 }
 .sale-items .item-4 .pricking-irons {
-  padding-bottom: 90px;
   border-radius: 10px;
 }
 
@@ -433,6 +433,12 @@ p {
   }
   .custom-order .order-msg {
     padding-bottom: 50px;
+  }
+  .custom-order .email-box-field {
+    width: 100%;
+  }
+  .custom-order .order-area {
+    margin-left: -45px;
   }
   .sale-items {
     display: grid;
